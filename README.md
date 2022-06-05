@@ -5,3 +5,23 @@ https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager
 
 
 http://localhost:8090/rest/server/containers/demo-app-kjar-1_0_0/processes/demo-app-kjar.my-biz-process/instances
+
+
+Notes:
+
+Oracle jdbc
+
+<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>${oracle.jdbc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ucp</artifactId>
+            <version>${oracle.jdbc.version}</version>
+        </dependency>
